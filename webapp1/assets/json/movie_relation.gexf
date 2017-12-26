@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="1" label="单身男女2,Don't Go Breaking My Heart 2">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15.900001"></viz:size>
+        <viz:position x="-5016" y="012" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="2" label="泰坦尼克号,铁达尼号(港,台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="27.300001"></viz:size>
+        <viz:position x="-20011" y="09" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="3" label="一生一世,一步双城,心城,But Always">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15.299999"></viz:size>
+        <viz:position x="-35012" y="037" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="4" label="撒娇女人最好命,撒娇的女人最好命,会撒娇的女人最好命,Women Who Flirt,Women Who Know How to Flirt Are the Luckiest">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="18.900002"></viz:size>
+        <viz:position x="-5002" y="012" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="5" label="歌曲改变人生,一切从音乐再开始(港),曼哈顿恋习曲(台),纽约小情歌,为乐而生,再次出发,重新开始,重来,Can a Song Save Your Life?,New York Melody">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="25.199999"></viz:size>
+        <viz:position x="-6503" y="030" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="6" label="大话西游之大圣娶亲,西游记完结篇仙履奇缘,齐天大圣西游记,大话东游之二,A Chinese Odyssey Part Two - Cinderella">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="27.300001"></viz:size>
+        <viz:position x="-80016" y="403" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="7" label="她,云端情人(台),触不到的她(港)">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="24.900002"></viz:size>
+        <viz:position x="-5017" y="409" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="8" label="怦然心动,萌动青春,青春萌动,冒失,梧桐树之恋">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26.699999"></viz:size>
+        <viz:position x="-2008" y="4024" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="9" label="心花路放,玩命邂逅,玩儿命邂逅,心花怒放,Breakup Buddies">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="21.0"></viz:size>
+        <viz:position x="-3507" y="4029" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="10" label="罗马假日,金枝玉叶(港),罗马假期(台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="26.699999"></viz:size>
+        <viz:position x="-50011" y="4030" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="11" label="你眼中的世界,烈眼焚情">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22.5"></viz:size>
+        <viz:position x="-65013" y="4032" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="12" label="露水红颜,红颜露水,For Love or Money,Difficult Love">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="14.700001"></viz:size>
+        <viz:position x="-80016" y="8037" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="13" label="这个杀手不太冷,杀手莱昂,终极追杀令(台),杀手里昂,Leon,Leon: The Professional">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="28.199999"></viz:size>
+        <viz:position x="-501" y="8029" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="14" label="霸王别姬,再见，我的妾,Farewell My Concubine">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="28.199999"></viz:size>
+        <viz:position x="-2009" y="803" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="15" label="乱世佳人,飘">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="27.599998"></viz:size>
+        <viz:position x="-3509" y="800" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="16" label="机器人总动员,太空奇兵·威E(港),瓦力(台),星际总动员,地球废品分装员,机器人瓦力,walle">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="27.900002"></viz:size>
+        <viz:position x="-5000" y="808" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="17" label="天使爱美丽,艾蜜莉的异想世界(台),天使艾米莉,天使艾美丽,阿梅丽的奇妙命运,艾蜜丽,Amelie">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="26.400002"></viz:size>
+        <viz:position x="-6502" y="8033" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="18" label="时空恋旅人,时空旅恋人,回到最爱的一天(港),真爱每一天(台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="25.5"></viz:size>
+        <viz:position x="-80016" y="12027" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="19" label="同桌的妳,同桌的你,My Old Classmate">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="18.0"></viz:size>
+        <viz:position x="-5011" y="1207" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="20" label="闺蜜">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-2009" y="12020" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="21" label="Girls">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="16.8"></viz:size>
+        <viz:position x="-3508" y="12036" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="22" label="飞屋环游记,冲天救兵(港),天外奇迹(台),飞屋历险记">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="26.699999"></viz:size>
+        <viz:position x="-5007" y="1203" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="23" label="那些年，我们一起追的女孩,You Are the Apple of My Eye">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="24.599998"></viz:size>
+        <viz:position x="-6502" y="12027" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="24" label="恋恋笔记本,深情日记,写我情真,手札情缘,忘了·忘不了,恋恋记事本,恋爱日记">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.5"></viz:size>
+        <viz:position x="-8009" y="16028" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="25" label="单身男女,Don’t Go Breaking My Heart">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="20.400002"></viz:size>
+        <viz:position x="-500" y="16028" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="26" label="星运里的错,命运的错,生命中的美好缺憾(港),无比美妙的痛苦">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-20016" y="16012" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="27" label="匆匆那年,Fleet of Time">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="16.2"></viz:size>
+        <viz:position x="-35018" y="16010" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="28" label="等一个人咖啡,Café·Waiting·Love">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="16.8"></viz:size>
+        <viz:position x="-50018" y="16031" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="29" label="三傻大闹宝莱坞,三个傻瓜,作死不离3兄弟(港),三个白痴,三个傻蛋,三个呆瓜,三生万悟,寻找兰彻,Three Idiots">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="27.300001"></viz:size>
+        <viz:position x="-65012" y="1602" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="30" label="如果我留下,如果我还活着,徘徊人世间">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="18.3"></viz:size>
+        <viz:position x="-8005" y="20022" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="31" label="归来">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-5016" y="20010" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="32" label="陆犯焉识,Coming Home">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-20014" y="20024" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="33" label="初恋这件小事,初恋那件小事(港),暗恋那点小事,叫做爱的小事,Sing lek lek tee reak wa rak,A Little Thing Called Love,First Love">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="24.900002"></viz:size>
+        <viz:position x="-3507" y="20035" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="34" label="剪刀手爱德华,幻海奇缘">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="26.099998"></viz:size>
+        <viz:position x="-5002" y="20024" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="35" label="教师日记,想念Wittaya,The Teacher's Diary">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.400002"></viz:size>
+        <viz:position x="-6508" y="20012" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="36" label="一天,真爱挑日子(台),情约1天(港),一年恋一天,一天的恋人,年年有今日,每年今日">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-80014" y="24023" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="37" label="大话西游之月光宝盒,西游记101回月光宝盒,齐天大圣东游记,大话东游之一,A Chinese Odyssey Part One - Pandora's Box">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26.699999"></viz:size>
+        <viz:position x="-504" y="24026" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="38" label="北京遇上西雅图,美丽有缘,情定西雅图,Finding Mr. Right,Anchoring in Seattle">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22.2"></viz:size>
+        <viz:position x="-20015" y="24016" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="39" label="情书,When I Close My Eyes,Letters of Love">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="26.400002"></viz:size>
+        <viz:position x="-3508" y="24021" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="40" label="爱在黎明破晓前,情留半天(港),爱在黎明破晓时(台),日出之前">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="26.099998"></viz:size>
+        <viz:position x="-5002" y="24017" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="41" label="失恋33天,Love is Not Blind,黄了一个来月(豆友译名)">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22.2"></viz:size>
+        <viz:position x="-65011" y="24029" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="42" label="和莎莫的500天,心跳(500)天(港),恋夏(500日)(台),初恋500天,与萨莫的500天,仲夏(500)天,500 Days of Summer">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="24.0"></viz:size>
+        <viz:position x="-8007" y="28039" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="43" label="本杰明·巴顿奇事,奇幻逆缘(港),返老还童,班杰明的奇幻旅程">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="26.099998"></viz:size>
+        <viz:position x="-502" y="28011" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="44" label="真爱至上,爱是您，爱是我(台),真的恋爱了(港),真情角落,真爱">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.5"></viz:size>
+        <viz:position x="-20017" y="28019" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="45" label="第二次人生">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="12.299999"></viz:size>
+        <viz:position x="-35018" y="28011" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="46" label="假如爱有天意,不可不信缘,缘起不灭,爱有天意,Keulraesik,The Classic">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="24.599998"></viz:size>
+        <viz:position x="-5000" y="28021" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="47" label="我的野蛮女友">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-6509" y="2805" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="48" label="我的淘气女友,猎奇女友,My Sassy Girl">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="24.0"></viz:size>
+        <viz:position x="-8001" y="32016" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="49" label="拆散专家,Nature Law,Break">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="9.6"></viz:size>
+        <viz:position x="-5019" y="32015" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="50" label="他其实没那么喜欢你,其实你不懂他的心,收错爱情风,其实他没那么喜欢你">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-2003" y="32015" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="51" label="听说,Hear Me">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="24.300001"></viz:size>
+        <viz:position x="-35018" y="32024" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="52" label="万物理论,霍金：爱的方程式(港),爱的万物论(台),少年霍金">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.400002"></viz:size>
+        <viz:position x="-5006" y="32014" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="53" label="致我们终将逝去的青春,致青春,So Young,To Our Youth That Is Fading Away">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="20.099998"></viz:size>
+        <viz:position x="-6506" y="32031" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="54" label="两小无猜,敢爱就来,宝贝游戏,Love Me If You Dare">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="24.900002"></viz:size>
+        <viz:position x="-80011" y="3606" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="55" label="爱在日落黄昏时,日落巴黎(港),爱在日落巴黎时(台),日落之前,情留相逢时,爱在日落余晖时,爱在日落黄昏前">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="26.099998"></viz:size>
+        <viz:position x="-5017" y="36031" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="56" label="推拿,Blind Massage">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-2007" y="36024" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="57" label="爱在午夜降临前,爱在午夜希腊时(台),情约半生(港),爱在午夜到来时,爱在午夜梦回时,午夜之前">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26.099998"></viz:size>
+        <viz:position x="-3504" y="36037" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="58" label="初恋50次,第50次求婚,每天爱你第1次,我的失恋女友,我的失忆女友,初恋五十次">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="23.400002"></viz:size>
+        <viz:position x="-50013" y="36016" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="59" label="前任攻略,EX-Files">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="19.2"></viz:size>
+        <viz:position x="-65014" y="36033" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="60" label="断背山,断臂山">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.199999"></viz:size>
+        <viz:position x="-80014" y="40028" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="61" label="傲慢与偏见,傲慢与偏见2005,Pride And Prejudice">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.199999"></viz:size>
+        <viz:position x="-503" y="4003" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="62" label="志明与春娇,谈恋爱,Love in a Puff">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="24.0"></viz:size>
+        <viz:position x="-2002" y="40015" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="63" label="曾经,一奏倾情(港),曾经。爱是唯一(台),曾经拥有,一生的唯一,情难独奏(豆友译名),宛似(豆友译名)">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.199999"></viz:size>
+        <viz:position x="-3508" y="40036" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="64" label="西雅图未眠夜,西雅图夜未眠,缘份的天空,西雅图不眠夜">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="23.7"></viz:size>
+        <viz:position x="-50012" y="4002" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="65" label="乌云背后的幸福线,失恋自作业(港),派特的幸福剧本(台),每朵乌云背后都有阳光,一线希望,闪开，让我拥抱幸福">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-65017" y="40015" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="66" label="触不可及">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-8004" y="44037" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="67" label="One Step Away">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15.299999"></viz:size>
+        <viz:position x="-502" y="44020" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="68" label="分手大师,The Breakup Guru">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15.599999"></viz:size>
+        <viz:position x="-20010" y="4402" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="69" label="雏菊">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-35011" y="44030" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="70" label="爱无间,黛西,Daisy">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="24.0"></viz:size>
+        <viz:position x="-5008" y="44020" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="71" label="了不起的盖茨比,大亨小传(港,台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22.8"></viz:size>
+        <viz:position x="-65018" y="44019" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="72" label="分手合约,A Wedding Invitation,이별계약">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="17.099998"></viz:size>
+        <viz:position x="-80014" y="4800" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="73" label="英国病人,英伦情人(台),别问我是谁(港)">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="25.199999"></viz:size>
+        <viz:position x="-5013" y="48022" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="74" label="北京爱情故事,北京爱情故事电影版,北爱电影版,BeiJing Love Story">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="18.3"></viz:size>
+        <viz:position x="-20016" y="48032" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="75" label="甜蜜蜜,Comrades: Almost a Love Story">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="25.800001"></viz:size>
+        <viz:position x="-35013" y="48036" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="76" label="春娇与志明,志明与春娇2,Love in The Buff">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22.2"></viz:size>
+        <viz:position x="-5007" y="48039" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="77" label="我脑中的橡皮擦">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-6505" y="4808" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="78" label="我脑海中的橡皮擦,拥抱这分钟(港),Eraser in my head,A moment to remember,Nae meorisokui jiwoogae">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="23.400002"></viz:size>
+        <viz:position x="-80015" y="52024" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="79" label="时间旅行者的妻子,时光旅的恋人(港),时空旅人之妻(台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="23.099998"></viz:size>
+        <viz:position x="-506" y="5208" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="80" label="白发魔女传之明月天国,白发魔女传3D,The White Haired Witch of Lunar Kingdom">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="11.4"></viz:size>
+        <viz:position x="-20014" y="5209" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="81" label="暖暖内含光,美丽心灵的永恒阳光,无痛失恋(港),王牌冤家(台),纯洁心灵的永恒阳光,无暇心灵的永恒阳光,灵光乍现,忘记你我做不到,暧暧内含光">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.199999"></viz:size>
+        <viz:position x="-3500" y="52036" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="82" label="逆世界,颠倒世界(台),逆天奇缘(港),翻天寻爱,交替空间,逆天寻爱,逆世界3D">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="18.3"></viz:size>
+        <viz:position x="-5009" y="52032" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="83" label="不能说的秘密,Secret">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="22.2"></viz:size>
+        <viz:position x="-6504" y="5205" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="84" label="匹诺曹,皮诺丘,皮耶诺,Pinocchio">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="24.900002"></viz:size>
+        <viz:position x="-80017" y="5603" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="85" label="">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-505" y="56020" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="86" label="太平轮(上),太平轮：乱世浮生I(台),生死恋,1949,The Crossing : Part 1">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="16.8"></viz:size>
+        <viz:position x="-20014" y="56028" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="87" label="诺丁山,摘星奇缘(港),新娘百分百(台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="23.7"></viz:size>
+        <viz:position x="-3506" y="5601" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="88" label="昼颜：工作日下午3点的恋人们,昼颜：平日午后3时的恋人们,Hirugao - Heijitsu Gogo 3 ji no Koibito tachi,Hirugao: Love Affairs in the Afternoon">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="25.800001"></viz:size>
+        <viz:position x="-5006" y="56026" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="89" label="">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-65017" y="56014" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="90" label="秒速5厘米,秒速五厘米,秒速5公分,Byôsoku 5 senchimêtoru,5 Centimeters per Second,5 Centimeters Per Second: A Chain of Short Stories About Their Distance">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25.5"></viz:size>
+        <viz:position x="-8002" y="60035" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="91" label="被偷走的那五年,被偷走的5年,被偷走的时光,最后一次说爱你,倾城之泪2,悲伤成河,The Stolen Years">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="17.099998"></viz:size>
+        <viz:position x="-5010" y="60033" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="92" label="消失的爱人,失踪的女孩,失踪女孩,失踪罪(港),控制(台)">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26.400002"></viz:size>
+        <viz:position x="-20010" y="60035" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="93" label="倩女幽魂,倩女幽魂(87版),A Chinese Ghost Story">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="25.5"></viz:size>
+        <viz:position x="-35010" y="60036" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="94" label="绣春刀,飞鱼服绣春刀,斩立决,Brotherhood of Blades">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22.5"></viz:size>
+        <viz:position x="-50016" y="60018" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="95" label="青蛇,Green Snake">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="24.900002"></viz:size>
+        <viz:position x="-65019" y="60039" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="96" label="重庆森林,Chungking Express">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="25.800001"></viz:size>
+        <viz:position x="-80016" y="64030" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="97" label="魂断蓝桥,滑铁卢桥">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="26.400002"></viz:size>
+        <viz:position x="-5017" y="64037" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="98" label="人鬼情未了,第六感生死恋,幽灵">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="24.599998"></viz:size>
+        <viz:position x="-2003" y="64023" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="99" label="101次求婚,Say Yes">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="17.099998"></viz:size>
+        <viz:position x="-35015" y="64016" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+      <node id="100" label="爱在暹罗">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="0.0"></viz:size>
+        <viz:position x="-5007" y="64022" z="0.0"></viz:position>
+        <viz:color r="235" g="81" b="72"></viz:color>
+      </node>
+</nodes>
+</graph>
+</gexf>

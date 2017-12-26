@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> xpedia--welcome to xpedia </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+          type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/reindex1.css" rel="stylesheet" type="text/css">
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <script type="text/javascript" src="assets/js/echarts.js"></script>
+    <script type="text/javascript" src="assets/js/data-tool.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <style>
+        /*显示数据信息的样式，考虑到图片路径所以写在HTML文件里了*/
+        #last{
+            display: flex;
+        }
+        .last-in{
+            height: 150px;
+            margin: 100px 20px;
+            flex: 1;
+            background-color: white;
+            box-shadow: 0 3px 10px -1px rgba(0, 0, 0, .3);
+        }
+        @keyframes ani1{
+            0%{
+                background-image:url(images/8.jpg) ;
+                opacity: 0;
+
+            }                                        /*若设置多个百分梯度：动画会分梯度生硬过度*/
+            100%{
+                background-image:url(images/8.jpg) ;
+                opacity: 1;
+
+            }
+        }
+        @keyframes ani2{
+            0%{
+                background-image:url(images/9.jpg) ;
+                opacity: 0;
+
+            }                                        /*若设置多个百分梯度：动画会分梯度生硬过度*/
+            100%{
+                background-image:url(images/9.jpg) ;
+                opacity: 1;
+
+            }
+        }
+        @keyframes ani3{
+            0%{
+                background-image:url(images/6.jpg) ;
+                opacity: 0;
+
+            }                                        /*若设置多个百分梯度：动画会分梯度生硬过度*/
+            100%{
+                background-image:url(images/6.jpg) ;
+                opacity: 1;
+
+            }
+        }
+        #first:hover{
+            animation:ani1 700ms;                        /*与@keyframes绑定 并规定在1s内完成动画*/
+            animation-fill-mode : forwards;          /*鼠标不离开容器，仍保持动画的最后效果*/
+        }
+        #second:hover{
+            animation:ani2 700ms;                        /*与@keyframes绑定 并规定在1s内完成动画*/
+            animation-fill-mode : forwards;          /*鼠标不离开容器，仍保持动画的最后效果*/
+        }
+        #third:hover{
+            animation:ani3 700ms;                        /*与@keyframes绑定 并规定在1s内完成动画*/
+            animation-fill-mode : forwards;          /*鼠标不离开容器，仍保持动画的最后效果*/
+        }
+
+        #background{
+            background-image: url(images/背景1.jpg);
+            /*background-size: cover;*/
+            background-size: cover;
+            /*position: absolute;*/
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            width:100%;
+            height: 100%;
+        }
+
+
+    </style>
+</head>
+<body >
+
+<div id="background">
+    <!--导航栏-->
+    <div id="st-navbar-desktop-wrapper" class="st-navbar-desktop-wrapper st-navbar-desktop-fixed">
+        <div class="st-navbar-desktop">
+            <div class="container">
+                <nav class="st-navbar-desktop-menu" role="navigation">
+                    <ul id="st-navbar-desktop-menu-nav" class="sf-menu">
+                        <li><a href="catalog.html">诗人</a></li>
+                        <li><a href="#">诗歌</a></li>
+                        <li><a href="search.html">查询</a></li>
+                        <li><a href="xiaofei.html">小菲</a></li>
+                        <li><a href="Analysis.html">辅助工具</a></li>
+                        <li><a href="Aboutus.html">关于我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--搜索框-->
+    <div class="container2">
+        <h2 class="text-center" style="color: white">FREEKG</h2>
+        <form action="" class="Search">
+            <input  class="Search-box" type="text" id="Search-box"  placeholder="whatever comes to your mind" >
+            <label id="btn" class="Search-label" for="Search-box"><i class="icon-search4" style="color: white;cursor: pointer;"></i></label>
+        </form>
+        <script src="assets/js/search.js"></script>
+    </div>
+</div>
+
+<!--信息和图谱显示部分-->
+<div class="module">
+    <div class="container-fluid module-text " >
+        <div class="row flex-container">
+            <div class="col-md-5 col-md-offset-1 flax-items">
+                <div class="panel panel-flat">
+                    <div class="position-relative">
+                        <div class="position-relative" style="width:100%;height:400px;z-index:100;"
+                             id="tupuall"></div>
+                        <div class="position-relative" style="width:100%;height:400px;z-index:10;display: none;"
+                             id="tupuone"></div>
+                        <script type="text/javascript" src="assets/js/tupu2improve2.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 flax-items col-md-offset-1">
+                <h3>我们在做什么</h3>
+                <p>对诗歌、诗人的内在关联进行全景式地分析与可视化</p>
+                <p>诗歌语义检索</p>
+                <p>诗歌智能问答</p>
+                <p>根据知识图谱和领域本体进行自动诗歌创作</p>
+                <p>为诗歌的研究与应用提供全新的（量化的、客观的、动态的）视角</p>
+            </div>
+        </div>
+        <div class="row flex-container">
+            <div class="col-md-4 col-md-offset-1 ">
+                <h3 class="float-right">从零开始的知识图谱自动构建</h3>
+                <p class="float-right">数据源：百科类网站、中文诗歌网站、人名地名辞典、时空坐标数据等</p>
+                <p class="float-right">人工智能技术： NLP、机器学习等自动地构建</p>
+                <p class="float-right">图数据库技术：使用图数据库管理系统对知识图谱进行存储和管理</p>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <div class="panel panel-body" id="poetplace" style="width:100%;"></div>
+            </div>
+            <script type="text/javascript" src="assets/js/poetplace.js"></script>
+            <script src="http://echarts.baidu.com/asset/map/js/china.js"></script>
+        </div>
+        <div class="row flex-container">
+            <div class="col-md-5 col-md-offset-1">
+                <div class="panel panel-flat">
+                    <div class="position-relative">
+                        <div class="position-relative" style="width:100%;height:400px;z-index:100;"
+                             id="tupuallc"></div>
+                        <div class="position-relative" style="width:100%;height:400px;z-index:10;display: none;"
+                             id="tupuonec"></div>
+                        <script type="text/javascript" src="assets/js/tupu2improve2.js"></script>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <h3>技术架构</h3>
+                <p>诗歌知识图谱构建：对诗歌文本进行信息抽取、知识融合与知识加工</p>
+                <p>知识图谱存储：RDF三元组+gStore图数据管理系统</p>
+                <p>垂直领域的知识服务：可视化、语义检索、智能问答、写诗机器人</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--数据显示部分-->
+<div id="last">
+    <div class="last-in" id="first">
+        <h2 class="text-center first-text">诗人</h2>
+        <h4 class="text-center first-text">2528</h4>
+    </div>
+    <div class="last-in" id="second">
+        <h2 class="text-center second-text">诗歌</h2>
+        <h4 class="text-center second-text">49403</h4>
+    </div>
+    <div class="last-in" id="third">
+        <h2 class="text-center third-text">经历</h2>
+        <h4 class="text-center third-text">1871</h4>
+    </div>
+</div>
+<footer>
+    <p id="footer-in">&copy; 2017. <a href="http://www.felixy.xyz" target="_blank">Felixy</a>前端实验室</p>
+</footer>
+<script src="assets/js/reindex1.js"></script>
+</body>
+</html>

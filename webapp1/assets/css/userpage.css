@@ -1,0 +1,15 @@
+.panel img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.panel .panel-heading img{
+     vertical-align: middle;
+ }
+.panel .panel-heading span{
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.panel .row .quickstartlist{
+    width: 90%;
+}

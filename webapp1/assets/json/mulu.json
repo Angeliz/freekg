@@ -1,0 +1,70 @@
+{
+  "name": "目录",
+  "children": [
+    {
+      "name": "图谱概览",
+      "children": [
+        {
+          "name": "诗人图谱",
+          "value":"catalog.html"
+        },
+        {
+          "name": "诗人图谱-环形",
+          "value":"catalogc.html"
+        },
+        {
+          "name": "诗人卡片",
+          "value":"Card.html"
+        },
+        {
+          "name": "诗人轨迹",
+          "value":"poetplace.html"
+        }
+      ]
+    },
+    {
+      "name": "查询",
+      "value":"search.html"
+    },
+    {
+      "name": "辅助工具",
+      "children": [
+        {
+          "name": "诗人及诗歌论文分析",
+          "value":"ComAnalysis.html"
+        },
+        {"name": "综合分析工具", "value": "Analysis.html"},
+        {"name": "诗歌小菲", "value": "xiaofei.html"}
+      ]
+    },
+    {
+      "name": "API",
+      "children": [
+        {"name": "API手册", "value":"API.html"}
+      ]
+    },
+    {
+      "name": "出版",
+      "children": [
+        {"name": "出版图书", "value":"publication.html"},
+        {"name": "数据库",
+          "children":[
+            {"name":"百度百科","value":"baikedatabase.html"},
+            {"name":"豆瓣","value":"doubandatabase.html"},
+            {"name":"诗词","value":"poemdatabase.html"}
+          ]
+        },
+        {"name":"应用次数","value":"referinfo.html"},
+        {"name":"页面内容整理","value":"contentmanager.html"}
+      ]
+    },
+    {
+      "name": "游戏",
+      "value":"Game.html"
+    },
+    {
+      "name": "关于我们",
+      "value":"Aboutus.html"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[{
+  "source": "李白",
+  "target": "nihao",
+  "value":"创作"
+}, {
+  "source": "李白",
+  "target": "早发白帝城",
+  "value": "创作"
+}, {
+  "source":"李白",
+  "target":"赠汪伦",
+  "value": "创作"
+},
+  {
+    "source":"李白",
+    "target": "经历",
+    "value": "拥有"
+  }, {
+  "source":"李白",
+  "target": "经历2",
+  "value": "拥有"
+}, {
+  "source": "李白",
+  "target": "经历3",
+  "value": "拥有"
+}
+]
