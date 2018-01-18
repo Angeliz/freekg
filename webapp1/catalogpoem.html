@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link href="assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/catalog.css" type="text/css">
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
@@ -22,7 +24,8 @@
     <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
     <script type="text/javascript" src="assets/js/echarts.js"></script>
-    <script type="text/javascript" src="assets/js/locator.js"></script>
+    <script type="text/javascript" src="assets/js/echarts4.js"></script>
+    <script type="text/javascript" src="assets/js/data-tool.js"></script>
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
@@ -35,15 +38,14 @@
     <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
 
     <script type="text/javascript" src="assets/js/core/app.js"></script>
-    <!--<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>-->
-    <script type="text/javascript" src="assets/js/fonttypechange.js"></script>
-    <link rel="stylesheet" href="assets/css/userpage.css" type="text/css">
+    <script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+
     <!-- /theme JS files -->
 
 </head>
 
 <body>
-<!--上方导航栏-->
+
 <!-- Main navbar -->
 <div class="navbar navbar-default header-highlight">
     <div class="navbar-header">
@@ -64,17 +66,26 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown language-switch">
                 <a class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="assets/images/flags/cn.png" class="position-left" alt="">
-                    中文
+                    <img src="assets/images/flags/cn.png" class="position-left" alt=""> 中文
                     <span class="caret"></span>
                 </a>
 
                 <ul class="dropdown-menu">
-                    <li><a class="deutsch"><img src="assets/images/flags/de.png" alt=""> Deutsch</a></li>
-                    <li><a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a></li>
-                    <li><a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a></li>
-                    <li><a class="espana"><img src="assets/images/flags/es.png" alt=""> España</a></li>
-                    <li><a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a></li>
+                    <li>
+                        <a class="deutsch"><img src="assets/images/flags/de.png" alt=""> Deutsch</a>
+                    </li>
+                    <li>
+                        <a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a>
+                    </li>
+                    <li>
+                        <a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a>
+                    </li>
+                    <li>
+                        <a class="espana"><img src="assets/images/flags/es.png" alt=""> España</a>
+                    </li>
+                    <li>
+                        <a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a>
+                    </li>
                 </ul>
             </li>
 
@@ -148,7 +159,7 @@
 
     <!-- Page content -->
     <div class="page-content">
-        <!--左方导航栏-->
+
         <!-- Main sidebar -->
         <div class="sidebar sidebar-main">
             <div class="sidebar-content">
@@ -165,15 +176,15 @@
                             <li >
                                 <a href="#"><i class="icon-stack2"></i> <span>诗人</span></a>
                                 <ul>
-                                    <li><a href="#">诗人目录</a></li>
-                                    <li><a href="catalogc.html">诗人关系图谱</a></li>
+                                    <li ><a href="#">诗人目录</a></li>
+                                    <li ><a href="catalogc.html">诗人关系图谱</a></li>
                                     <li><a href="Card.html">诗人卡片</a></li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="#"><i class="icon-stack2"></i> <span>诗歌</span></a>
+                                <a href="#" class="active"><i class="icon-stack2"></i> <span>诗歌</span></a>
                                 <ul>
-                                    <li><a href="catalogpoem.html">诗歌目录</a></li>
+                                    <li class="active"><a href="catalogpoem.html">诗歌目录</a></li>
                                     <li><a href="#">诗歌关系图谱</a></li>
                                     <li><a href="#">诗歌卡片</a></li>
                                 </ul>
@@ -231,201 +242,136 @@
 
         <!-- Main content -->
         <div class="content-wrapper">
-            <!-- Page header -->
-            <div class="page-header">
-                <div class="breadcrumb-line">
-                    <ul class="breadcrumb position-right" id="poetinfo_breadcrumb">
-                        <li><a href="index.html"><i class="icon-home2 position-left"></i> 首页</a></li>
-                        <li><a href="userpage.html">个人主页</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /page header -->
 
-            <br>
             <!-- Content area -->
             <div class="content">
-                <!--两列模式个人主页内容-->
+
                 <div class="row">
-                    <div class="col-md-6">
+                    <!--图谱部分-->
+                    <div class="col-md-12">
                         <div class="panel panel-flat">
-                            <div class="panel-heading">
-                                <img src="assets/images/placeholder.jpg" alt="">
-                                <span><b>Felixy</b></span>
-
-                                <span class="pull-right"><i class="icon-cog52"></i></span>
-                            </div>
-                        </div>
-                        <!-- Quick stats boxes -->
-                        <div class="row quickstartlist">
-                            <!--三个快速启动图标-->
-                            <div class="col-lg-4">
-
-                                <!-- Members online -->
-                                <div class="panel bg-teal-400">
-                                    <div class="panel-body">
-                                        <h3 class="no-margin">收藏数量</h3>
-                                        <div class="text-muted text-size-small">123</div>
-                                    </div>
-
-                                    <div class="container-fluid">
-                                        <div id="members-online"></div>
-                                    </div>
-                                </div>
-                                <!-- /members online -->
-
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <!-- Current server load -->
-                                <div class="panel bg-pink-400">
-                                    <div class="panel-body">
-                                        <h3 class="no-margin">文章数量</h3>
-                                        <div class="text-muted text-size-small" id="articlenum">3</div>
-                                    </div>
-
-                                    <div id="server-load"></div>
-                                </div>
-                                <!-- /current server load -->
-
-                            </div>
-
-                            <div class="col-lg-4">
-
-                                <!-- Today's revenue -->
-                                <div class="panel bg-blue-400">
-                                    <div class="panel-body">
-                                        <h3 class="no-margin">足迹数量</h3>
-                                        <div class="text-muted text-size-small">122</div>
-                                    </div>
-
-                                    <div id="today-revenue"></div>
-                                </div>
-                                <!-- /today's revenue -->
-
-                            </div>
-                            <!--/三个快速启动图标结束-->
-                        </div>
-                        <!-- /quick stats boxes -->
-
-                        <div class="panel panel-flat">
-                            <div class="panel-heading">
-                                <h6><b>我的文章列表</b></h6>
-                            </div>
-                            <div class="content">
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    中山陵碑文
-                                                </a>
-                                                <span class="pull-right"> <a href=""><i class="icon-bin"></i></a></span>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    文化苦旅
-                                                </a>
-                                                <span class="pull-right"> <a href=""><i class="icon-bin"></i></a></span>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    苏东坡突围
-                                                </a>
-                                                <span class="pull-right"> <a href=""><i class="icon-bin"></i></a></span>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <!--<div class="panel-heading">-->
+                            <!--<h6 class="panel-title"> </h6>-->
+                            <!--<div class="heading-elements">-->
+                            <!--<form class="heading-form" action="#">-->
+                            <!--<div class="form-group hidden">-->
+                            <!--<label class="checkbox-inline checkbox-switchery checkbox-right switchery-xs">-->
+                            <!--<input type="checkbox" id="catalog_showModulebox" class="switch" onclick="showModulebox()">-->
+                            <!--模板查询:-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--</form>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <div class="position-relative">
+                                <div class="position-relative" style="width:100%;height:600px;z-index:100;"
+                                     id="tupuall"></div>
+                                <div class="position-relative" style="width:100%;height:560px;z-index:10;display: none;"
+                                     id="tupuone"></div>
+                                <script type="text/javascript" src="assets/js/fonttypechange.js"></script>
+                                <script type="text/javascript" src="assets/js/tupupoem.js"></script>
+                                <script type="text/javascript" src="assets/js/tupu3.js"></script>
+                                <!--<script type="text/javascript" src="assets/js/tupu.js"></script>-->
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-flat">
-                            <div class="panel-heading">
-                                <h6><b>我的收藏</b></h6>
-                            </div>
-                            <div class="content">
-                                <p>啦啦啦啦</p>
-                            </div>
-                        </div>
-                        <div class="panel panel-flat">
-                            <div class="panel-heading">
-                                <h6><b>我的足迹</b></h6>
-                            </div>
-                            <div class="content">
-                                <p>啦啦啦啦here is the most important thing</p>
-                            </div>
-                        </div>
-                        <!-- 添加文章 -->
-                        <div class="panel bg-pink-400">
-                            <div class="panel-body"  data-toggle="modal" data-target="#add">
-                                <h3 class="no-margin">添加文章</h3>
-                                诗词文本分析论文
-                                <span class="pull-right"><i class="icon-add label-icon-lg"></i></span>
-                            </div>
+                    <!--图谱信息部分-->
+                    <!--<div class="col-md-3">-->
+                        <!--<div class="panel panel-flat" id="panel1" style="display: none;">-->
+                            <!--<div class="panel-heading panel-success">-->
+                                <!--<h6 class="panel-title">所选节点:</h6>-->
+                            <!--</div>-->
+                            <!--<div class="panel-body">-->
+                                <!--<h6 id="selectnode">&nbsp;</h6>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="panel panel-flat" id="panel2" style="display: none;">-->
+                            <!--<div class="panel-heading panel-success">-->
+                                <!--<h6 class="panel-title">详细信息:</h6>-->
+                            <!--</div>-->
+                            <!--<div class="panel-heading" id="info_description" style="width:100%;"></div>-->
+                            <!--<a class="btn btn-success" style="width: 100%;background-color: #292638; color: white;" id="reloadbutton"-->
+                               <!--onclick="reload()">显示详细图谱</a>-->
+                            <!--<a class="btn btn-default" style="width: 100%;background-color: #292638; color: white;" id="directinfo"-->
+                               <!--onclick="showpoetpage()">显示诗人主页</a>-->
+                            <!--<a class="btn btn-primary" style="width: 100%;display: none;" id="poembutton" onclick="showpoempage()">显示诗歌主页</a>-->
+                        <!--</div>-->
 
-                        </div>
-                        <!-- /添加文章结束 -->
-                    </div>
+                        <!--<div class="panel panel-flat hidden" id="Moudule_search_panel">-->
+                            <!--<div class="panel-heading panel-success">-->
+                                <!--<h6 class="panel-title">模板查询:</h6>-->
+                            <!--</div>-->
+
+                            <!--<div class="modulebox"-->
+                                 <!--style="width:90%;text-align: left;display: inline-block;margin: 10px;border-radius: 5px;padding: 5px;">-->
+                                <!--<input type="text" class="form-control" placeholder="主体"-->
+                                       <!--aria-describedby="basic-addon1"-->
+                                       <!--style="width:40%;margin: 0;" id="module1">-->
+
+                                <!--<a class="btn btn-danger pull-right"-->
+                                   <!--style="width: 30%;margin-top: 10px;margin-right: 20px;margin-bottom: 5px" id="submit3"-->
+                                   <!--onclick="moduleSearch1();">查询</a>-->
+                            <!--</div>&lt;!&ndash;modulebox结束&ndash;&gt;-->
+
+                            <!--<div class="modulebox"-->
+                                 <!--style="text-align: left;display: inline-block;margin: 10px;border-radius: 5px;padding: 5px;">-->
+                                <!--<input type="text" class="form-control" placeholder="主体"-->
+                                       <!--aria-describedby="basic-addon1"-->
+                                       <!--style="width:40%;margin: 0;display:inline-block" id="module2">-->
+
+                                <!--<span>在</span>-->
+                                <!--<span>-->
+                                <!--<select class="form-control" style="width: 50%;margin:0;display: inline-block" id="select1">-->
+                                    <!--<option>时间</option>-->
+                                    <!--<option>地点</option>-->
+                                <!--</select>-->
+                                <!--</span>-->
+                                <!--<div class="form-group has-success" style="margin-bottom: 0px">-->
+                                    <!--<input type="text" class="form-control "-->
+                                           <!--aria-describedby="basic-addon1"-->
+                                           <!--style="width:30%;margin: 10px 0px 0px 0px;display:inline-block" id="module3">-->
+                                    <!--<select class="form-control" style="width: 50%;margin:0;display: inline-block;" id="select2">-->
+                                        <!--<option>的经历？</option>-->
+                                        <!--<option>认识的人？</option>-->
+                                        <!--<option>的作品？</option>-->
+                                    <!--</select>-->
+                                <!--</div>-->
+
+                                <!--<a class="btn btn-danger pull-right"-->
+                                   <!--style="width: 30%;margin-top: 10px;margin-right: 20px;margin-bottom: 5px" id="submit"-->
+                                   <!--onclick="moduleSearch2()">查询</a>-->
+                            <!--</div>&lt;!&ndash;modulebox结束&ndash;&gt;-->
+
+                            <!--<div class="modulebox"-->
+                                 <!--style="text-align: left;display: inline-block;margin: 10px;border-radius: 5px;padding: 5px;">-->
+                                <!--<input type="text" class="form-control" placeholder="主体A"-->
+                                       <!--aria-describedby="basic-addon1"-->
+                                       <!--style="width:45%;margin: 0;display:inline-block">-->
+
+                                <!--<span>与</span>-->
+                                <!--<input type="text" class="form-control" placeholder="主体B"-->
+                                       <!--aria-describedby="basic-addon1"-->
+                                       <!--style="width:45%;margin: 0;display:inline-block">-->
+
+                                <!--<div class="form-group has-success" style="margin-bottom: 0px;margin-top: 10px;">-->
+                                    <!--<select class="form-control" style="width: 50%;margin:0;display: inline-block;">-->
+                                        <!--<option>的关系？</option>-->
+                                    <!--</select>-->
+                                <!--</div>-->
+
+                                <!--<a class="btn btn-danger pull-right"-->
+                                   <!--style="width: 30%;margin-top: 10px;margin-right: 20px;margin-bottom: 5px" id="submit2"-->
+                                   <!--onclick="">查询</a>-->
+                            <!--</div>&lt;!&ndash;modulebox结束&ndash;&gt;-->
+
+                            <!--<a class="btn  btn-block btn-lg btn-info" id="addModule" style="width: 100%" onclick="">添加模板</a>-->
+
+                            <!--<script type="text/javascript" src="assets/js/modulesearch.js"></script>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
                 </div>
-
-                <!-- 添加新文章的页面-->
-                <div id="add" class="modal fade">
-                    <div class="modal-dialog">
-                        <div class="modal-content bg-brown-400">
-                            <div class="modal-header">
-                                <h5 class="modal-title text-center">添加新文章</h5>
-                            </div>
-                            <form action="#" class="form-group">
-                                <div class="modal-body">
-                                    <div class="form-inline has-feedback">
-                                        <label class="pull-left">文章名：</label>
-                                        <input type="text" style="width: 200px;height: 25px" maxlength="10" class="form-control" id="article-title" required>
-                                        <span class="help-block" type="text">不超过10个字</span>
-                                    </div>
-                                    <br>
-                                    <div class="form-group has-feedback">
-                                        <label>文章内容：</label><br>
-                                        <textarea style="height: 200px;width: 450px;" placeholder="请输入文章内容" id="article" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-footer text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg" id="memory">保存</button>&#12288;&#12288;&#12288;
-                                    <button type="reset" class="btn btn-default btn-lg">清空</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- 添加新文章的页面-->
-
-                <script type="text/javascript" src="assets/js/userpage.js"></script>
-                    <!--/两列模式个人主页内容-->
 
                 <!-- 登陆注册页面 -->
                 <div id="modal_form_inline" class="modal fade">
@@ -509,23 +455,29 @@
                     </div>
                 </div>
                 <!-- /登陆注册页面 -->
-                    <!-- Footer -->
-                    <div class="footer text-muted">
-                        &copy; 2017. <a href="http://www.felixy.xyz" target="_blank">Felixy</a>前端实验室
-                    </div>
-                    <!-- /footer -->
-
-                </div>
-                <!-- /content area -->
 
             </div>
-            <!-- /main content -->
+            <!-- Footer -->
+            <div class="footer text-muted">
+                &copy; 2017. <a href="http://www.felixy.xyz" target="_blank">Felixy</a>前端实验室
+            </div>
+            <!-- /footer -->
 
         </div>
-        <!-- /page content -->
+        <!-- /content area -->
 
     </div>
-    <!-- /page container -->
+    <!-- /main content -->
 
+</div>
+<!-- /page content -->
+
+</div>
+<!-- /page container -->
+<script type="text/javascript" src="assets/js/catlogjs.js"></script>
+
+<script type="text/javascript" src="assets/js/effect.js"></script>
+<script type="text/javascript" src="assets/js/searchadapter.js"></script>
 </body>
+
 </html>
