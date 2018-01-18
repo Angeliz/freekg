@@ -173,7 +173,7 @@
                             <li >
                                 <a href="#"><i class="icon-stack2"></i> <span>诗人</span></a>
                                 <ul>
-                                    <li><a href="catalog.html">诗人目录</a></li>
+                                    <li><a href="#">诗人目录</a></li>
                                     <li><a href="catalogc.html">诗人关系图谱</a></li>
                                     <li><a href="Card.html">诗人卡片</a></li>
                                 </ul>
@@ -254,9 +254,9 @@
                                 <div class="heading-elements">
                                     <form class="heading-form" action="#">
                                         <div class="form-group">
-                                            <label class="checkbox-inline checkbox-switchery checkbox-right switchery-xs">
+                                            <label class="checkbox-inline checkbox-switchery checkbox-right switchery-xs" >
                                                 <input type="checkbox" id="search_exp" class="switch" checked="checked"
-                                                       onclick="showExp()">
+                                                       onclick="showExp()" >
                                                 查询说明:
                                             </label>
                                         </div>
@@ -270,14 +270,15 @@
                                     <input id="search_content" type="search" class="form-control" placeholder="除却巫山不是云">
                                     <span class="input-group-btn">
 											<button class="btn bg-success" type="button"
-                                                    onclick="search()"> 查询 </button>
+                                                    onclick="search()" style="background-color: #292638; color: white;"> 查询 </button>
 										</span>
                                 </div>
                                 <div class="position-relative">
                                     <div class="content" id="ambiguity_shower">
                                     </div>
                                 </div>
-
+                                <div id="poem_shower">
+                                </div>
                                 <div class="position-relative" style="width:100%;height:560px;"
                                      id="search_shower"></div>
                                 <script type="text/javascript" src="assets/js/createRelation.js"></script>

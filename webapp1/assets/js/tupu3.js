@@ -9,7 +9,7 @@ var categories=[{name:"诗人"},{name:"诗歌"}];
 function doubcl(param,mode) {
     if (mode==2){
         $.ajaxSettings.async = false;
-        $.getJSON('datasource/allpoet', function (json) {//这里获取诗人列表
+        $.getJSON('http://www.freekg.cn/poet/datasource/allpoet', function (json) {//这里获取诗人列表
             var num = JSONLength(json);
             for (var m = 0; m < num; m++) {
                 namelist.push(json[m].name);
@@ -25,7 +25,7 @@ function doubcl(param,mode) {
                 );
             }
         });
-            $.getJSON('datasource/relation', function (rela) {
+            $.getJSON('http://www.freekg.cn/poet/datasource/relation', function (rela) {
                 console.log("下面输入获得的rela列表");
                 console.log(rela);
                 for (var b = 0; b < JSONLength(rela); b++) {
@@ -42,6 +42,7 @@ function doubcl(param,mode) {
             });
         $.ajaxSettings.async = true;
     }
+
     $("#panel1").hide();
     $("#panel2").hide();
     findrelativelinkandnodes(param);
@@ -204,7 +205,7 @@ function findrelativelinkandnodes(param) {//查找相关的引用关系和引用
 }
 function findrelativelinkandwork(param) {
     $.ajaxSettings.async = false;
-    $.getJSON("datasource/work?poeturi="+param.data.value, function (work) {
+    $.getJSON("http://www.freekg.cn/poet/datasource/work?poeturi="+param.data.value, function (work) {
         console.log("现在返回的work数据")
         console.log(work);
         var worknum = JSONLength(work);
@@ -248,12 +249,12 @@ function findrelativelinkandwork(param) {
 
 }
 function findrelativelinkandexp(param) {
-    $.getJSON("datasource/exp?poeturi="+param.data.value,function (exp) {
+    $.getJSON("http://www.freekg.cn/poet/datasource/exp?poeturi="+param.data.value,function (exp) {
         deleteall();
         console.log(exp);
         for (var m=0;m<JSONLength(exp);m++) {
             $.ajaxSettings.async = false;
-            $.getJSON("datasource/expdes?expuri=" + exp[m].exp, function (expdes) {
+            $.getJSON("http://www.freekg.cn/poet/datasource/expdes?expuri=" + exp[m].exp, function (expdes) {
                 var eme = document.getElementById('info_description');
                 var a1 = createbutton("经历", expdes[0].description);
                 var a2 = createbutton("地点", expdes[0].place);

@@ -65,3 +65,10 @@ var param={
 function showtupupage() {
     doubcl(param);
 }
+var tupusum=document.getElementById("tupusum");
+tupusum.onclick=function () {
+    showpoettupusum();
+}
+function showpoettupusum() {
+    window.location.assign("poetinfo.html?poetname="+pareparam.data.name+"?uri="+pareparam.data.value);
+}

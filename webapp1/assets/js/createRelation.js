@@ -1,9 +1,17 @@
+/*
+Created by 67 on 2018/1/17
+修改内容：查询古诗时显示古诗内容而非诗人图谱
+ */
 var pareparam;
 var count=0;//消歧计数器
 var pausejsonlist;
 var nodeslist = [];//节点列表
 var edgelist = [];//边列表
 var dom = document.getElementById("search_shower");
+var poemshower=document.getElementById("poem_shower");
+var poemname=document.createElement("h2");
+var poemauthor=document.createElement("h2");
+var poemcontent=document.createElement("h2");
 var tupuone = echarts.init(dom);
 function search() {
     $("#search_shower").hide();
@@ -13,15 +21,16 @@ function search() {
         info = "除却巫山不是云";
     }
     // var realinfo = convert(1, info);
-    $.getJSON("datasource/unknownquery?name=" + info, function (json) {
+    $.getJSON("http://www.freekg.cn/poet/datasource/unknownquery?name=" + info, function (json) {
         console.log("新方法查询结果说明");
         console.log(json);
         if (JSONLength(json) > 1) {//如果不止一个元素就消歧
             pausejsonlist=[];
             $("#search_shower").hide();
+            $("#poem_shower").hide();
             ambiguity(json);
             var len=JSONLength(json);
-            for (let a=0;a<len;a++){
+            for (var a=0;a<len;a++){
                 pausejsonlist.push(
                     json[a]
                 )
@@ -31,10 +40,12 @@ function search() {
         } else {
             if (json[0].born) {//判断单个实体的类型，是古诗还是诗人
                 answerpoetrequest(json[0]);
+                $("#search_shower").show();
             } else {
                 answerpoemrequest(json[0]);
+                $("#poem_shower").show();
             }
-            $("#search_shower").show();
+
         }
     });
     // tupuone.showLoading();
@@ -181,6 +192,7 @@ function search() {
     //     })
 }
 function answerpoetrequest(info) {//响应诗人查询结果，下面显示单个节点图，并可以从右侧选择进入相应的诗人主页或者图谱页面
+    // $("#poem_shower").hide();
     nodeslist=[];
     edgelist=[];
     deleteall();
@@ -243,6 +255,7 @@ function answerpoetrequest(info) {//响应诗人查询结果，下面显示单�
     });
 }
 function answerpoemrequest(info) {//相应古诗查询结果，从下面显示古诗及作者节点图，并可以从右侧选择进入相应诗人主页或图谱页面
+
     nodeslist=[];
     edgelist=[];
     deleteall();
@@ -252,62 +265,73 @@ function answerpoemrequest(info) {//相应古诗查询结果，从下面显示�
         poemname:info.name,
         content:info.content
     }
-    findworklink(json);
-    console.log("作图前数据");
-    console.log(edgelist);
-    console.log(nodeslist);
-    option = {
-        title: {
-            text: convert(0,info.name)
-        },
-        series: [
-            {
-                type: 'graph',
-                layout: 'force',
-                symbolSize: 32,
-                roam: true,
-                draggable: true,
-                animation: false,
-                label: {
-                    normal: {
-                        show: true,
-                        position: 'inside',
-                        formatter: '{b}',
-                        textStyle: {
-                            fontSize: 12
-                        }
-                    }
-                },
-                force: {
-                    repulsion: 130,
-                    initLayout:"circular",
-                    layoutAnimation:false
-                },
-                edgeSymbol: ['circle', 'arrow'],
-                edgeSymbolSize: [4, 6],
-                edgeLabel: {
-                    normal: {
-                        textStyle: {
-                            fontSize: 20
-                        }
-                    }
-                },
-                data: nodeslist,
-                links: edgelist,
-                lineStyle: {
-                    normal: {
-                        opacity: 0.9,
-                        width: 2,
-                        curveness: 0
-                    }
-                }
-            }
-        ]
-    };//option结束
-    tupuone.setOption(option);
-    tupuone.on('click', function (param) {
-        clicktodo(param);
-    });
+
+    poemname=document.createElement("h2");
+    poemauthor=document.createElement("h2");
+    poemcontent=document.createElement("h2");
+    poemname.innerText=json.poemname;
+    poemauthor.innerText=json.name;
+    poemcontent.innerText=json.content;
+    poemshower.appendChild(poemname);
+    poemshower.appendChild(poemauthor);
+    poemshower.appendChild(poemcontent);
+
+    // findworklink(json);
+    // console.log("作图前数据");
+    // console.log(edgelist);
+    // console.log(nodeslist);
+    // option = {
+    //     title: {
+    //         text: convert(0,info.name)
+    //     },
+    //     series: [
+    //         {
+    //             type: 'graph',
+    //             layout: 'force',
+    //             symbolSize: 32,
+    //             roam: true,
+    //             draggable: true,
+    //             animation: false,
+    //             label: {
+    //                 normal: {
+    //                     show: true,
+    //                     position: 'inside',
+    //                     formatter: '{b}',
+    //                     textStyle: {
+    //                         fontSize: 12
+    //                     }
+    //                 }
+    //             },
+    //             force: {
+    //                 repulsion: 130,
+    //                 initLayout:"circular",
+    //                 layoutAnimation:false
+    //             },
+    //             edgeSymbol: ['circle', 'arrow'],
+    //             edgeSymbolSize: [4, 6],
+    //             edgeLabel: {
+    //                 normal: {
+    //                     textStyle: {
+    //                         fontSize: 20
+    //                     }
+    //                 }
+    //             },
+    //             data: nodeslist,
+    //             links: edgelist,
+    //             lineStyle: {
+    //                 normal: {
+    //                     opacity: 0.9,
+    //                     width: 2,
+    //                     curveness: 0
+    //                 }
+    //             }
+    //         }
+    //     ]
+    // };//option结束
+    // tupuone.setOption(option);
+    // tupuone.on('click', function (param) {
+    //     clicktodo(param);
+    // });
 }
 function ambiguity(json) {//消除歧义，并给每个链接赋值之类的
     var container = document.getElementById("ambiguity_shower");
@@ -347,6 +371,9 @@ function deleteall() {
             i = i - 1;
         }
     }
+    poemname.innerHTML="";
+    poemauthor.innerHTML="";
+    poemcontent.innerHTML="";
 };
 function deleteambiguity() {
     var element = document.getElementById('ambiguity_shower');
@@ -388,7 +415,7 @@ function findworklink(json) {
         })
     }
     $.ajaxSettings.async = false;
-    $.getJSON("datasource/work?poeturi="+json.ob, function (work) {
+    $.getJSON("http://www.freekg.cn/poet/datasource/work?poeturi="+json.ob, function (work) {
         console.log("现在返回的work数据")
         console.log(work);
         var worknum = JSONLength(work);
@@ -443,7 +470,7 @@ function findworklink(json) {
 
 }
 function finexpinfo(json) {
-    $.getJSON("datasource/exp?poeturi="+json.ob,function (exp) {
+    $.getJSON("http://www.freekg.cn/poet/datasource/exp?poeturi="+json.ob,function (exp) {
         deleteall();
         console.log(exp);
         if(exp[0].description){

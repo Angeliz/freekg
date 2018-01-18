@@ -175,8 +175,8 @@
                             <li class="active">
                                 <a href="#"><i class="icon-stack2"></i> <span>诗人</span></a>
                                 <ul>
-                                    <li class="active"><a href="catalog.html">诗人目录</a></li>
-                                    <li><a href="catalogc.html">诗人关系图谱</a></li>
+                                    <li ><a href="#">诗人目录</a></li>
+                                    <li class="active"><a href="catalogc.html">诗人关系图谱</a></li>
                                     <li><a href="Card.html">诗人卡片</a></li>
                                 </ul>
                             </li>
@@ -272,6 +272,8 @@
                                 <script type="text/javascript" src="assets/js/tupu3.js"></script>
                                 <!--<script type="text/javascript" src="assets/js/tupu.js"></script>-->
                             </div>
+                            <a id="btnc" class="btn btn-default " href="catalogc.html" role="button" style="background-color: #292638; color: white;">环形关系图</a>
+                            <a id="btnf" class="btn btn-default " href="#" role="button" style="background-color: #292638; color: white;">力导向关系图</a>
                         </div>
                     </div>
                     <!--图谱信息部分-->
@@ -289,9 +291,9 @@
                                 <h6 class="panel-title">详细信息:</h6>
                             </div>
                             <div class="panel-heading" id="info_description" style="width:100%;"></div>
-                            <a class="btn btn-success" style="width: 100%;" id="reloadbutton"
+                            <a class="btn btn-success" style="width: 100%;background-color: #292638; color: white;" id="reloadbutton"
                                onclick="reload()">显示详细图谱</a>
-                            <a class="btn btn-danger" style="width: 100%;" id="directinfo"
+                            <a class="btn btn-default" style="width: 100%;background-color: #292638; color: white;" id="directinfo"
                                onclick="showpoetpage()">显示诗人主页</a>
                             <a class="btn btn-primary" style="width: 100%;display: none;" id="poembutton" onclick="showpoempage()">显示诗歌主页</a>
                         </div>

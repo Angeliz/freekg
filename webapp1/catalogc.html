@@ -247,21 +247,8 @@
 
                 <div class="row">
                     <!--图谱部分-->
-                    <div class="col-md-9">
-                        <div class="panel panel-flat">
-                            <!--<div class="panel-heading">-->
-                                <!--<h6 class="panel-title"> </h6>-->
-                                <!--<div class="heading-elements">-->
-                                    <!--<form class="heading-form" action="#">-->
-                                        <!--<div class="form-group hidden">-->
-                                            <!--<label class="checkbox-inline checkbox-switchery checkbox-right switchery-xs">-->
-                                                <!--<input type="checkbox" id="catalog_showModulebox" class="switch" onclick="showModulebox()">-->
-                                                <!--模板查询:-->
-                                            <!--</label>-->
-                                        <!--</div>-->
-                                    <!--</form>-->
-                                <!--</div>-->
-                            <!--</div>-->
+                    <div class="col-md-9 " >
+                        <div class="panel panel-flat" >
                             <div class="position-relative">
                                 <div class="position-relative" style="width:100%;height:560px;z-index:100;"
                                      id="tupuall"></div>
@@ -270,9 +257,11 @@
                                 <script type="text/javascript" src="assets/js/fonttypechange.js"></script>
                                 <script type="text/javascript" src="assets/js/tupu2cimprove.js"></script>
                                 <script type="text/javascript" src="assets/js/tupu3.js"></script>
-                                <!--<script type="text/javascript" src="assets/js/tupu.js"></script>-->
                             </div>
+                            <a id="btnc" class="btn btn-default " href="#" role="button" style="background-color: #292638; color: white;">环形关系图</a>
+                            <a id="btnf" class="btn btn-default " href="catalog.html" role="button" style="background-color: #292638; color: white;">力导向关系图</a>
                         </div>
+
                     </div>
                     <!--图谱信息部分-->
                     <div class="col-md-3">
@@ -289,9 +278,9 @@
                                 <h6 class="panel-title">详细信息:</h6>
                             </div>
                             <div class="panel-heading" id="info_description" style="width:100%;"></div>
-                            <a class="btn btn-success" style="width: 100%;" id="reloadbutton"
+                            <a  class="btn btn-default" style="width: 100%; background-color: #292638; color: white;" id="reloadbutton"
                                onclick="reload()">显示详细图谱</a>
-                            <a class="btn btn-danger" style="width: 100%;" id="directinfo"
+                            <a class="btn btn-default" style="width: 100%; background-color: #292638; color: white;" id="directinfo"
                                onclick="showpoetpage()">显示诗人主页</a>
                             <a class="btn btn-primary" style="width: 100%;display: none;" id="poembutton" onclick="showpoempage()">显示诗歌主页</a>
                         </div>

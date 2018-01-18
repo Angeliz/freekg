@@ -11,7 +11,7 @@ var links =[];
 links.pop();
 var namelist = [];
 <!--获取图谱生成数据-->
-$.getJSON('datasource/allpoet', function (json) {//这里获取诗人列表
+$.getJSON('http://www.freekg.cn/poet/datasource/allpoet', function (json) {//这里获取诗人列表
         var num = JSONLength(json);
         for (var m = 0; m < num; m++) {
             namelist.push(json[m].name);
@@ -26,7 +26,7 @@ $.getJSON('datasource/allpoet', function (json) {//这里获取诗人列表
                 }
             );
         }
-    $.getJSON('datasource/relation',function (rela) {
+    $.getJSON('http://www.freekg.cn/poet/datasource/relation',function (rela) {
         console.log("下面输入获得的rela列表");
         console.log(rela);
         for (var b=0;b<JSONLength(rela);b++){
@@ -142,7 +142,7 @@ function eConsole(param) {
         console.log(param);
         if(param.dataType=="node"){
 
-        $.getJSON('datasource/poet?poeturi='+param.data.value, function (json) {//这里根据传入的名称向后台发送请求，显示对应节点的知识卡片
+        $.getJSON('http://www.freekg.cn/poet/datasource/poet?poeturi='+param.data.value, function (json) {//这里根据传入的名称向后台发送请求，显示对应节点的知识卡片
             console.log("下面输出诗人详情");
             console.log(json);
             var altername=json[0].alter_name;
@@ -270,6 +270,8 @@ function reload() {
         console.log(pareparam);
         doubcl(pareparam,1);
     }
+    $("#btnc").hide();
+    $("#btnf").hide();
 
 }
 function showpoetpage() {
