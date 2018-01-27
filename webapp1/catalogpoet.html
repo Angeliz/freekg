@@ -15,6 +15,7 @@
     <link href="assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/catalog.css" type="text/css">
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
@@ -23,6 +24,7 @@
     <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
     <script type="text/javascript" src="assets/js/echarts.js"></script>
+    <script type="text/javascript" src="assets/js/echarts4.js"></script>
     <script type="text/javascript" src="assets/js/data-tool.js"></script>
     <!-- /core JS files -->
 
@@ -37,6 +39,7 @@
 
     <script type="text/javascript" src="assets/js/core/app.js"></script>
     <script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+
     <!-- /theme JS files -->
 
 </head>
@@ -173,27 +176,27 @@
                             <li >
                                 <a href="#"><i class="icon-stack2"></i> <span>诗人</span></a>
                                 <ul>
-                                    <li ><a href="catalogpoet.html">诗人目录</a></li>
-                                    <li><a href="catalogc.html">诗人关系图谱</a></li>
+                                    <li class="active"><a href="catalogpoet.html" >诗人目录</a></li>
+                                    <li ><a href="catalogc.html">诗人关系图谱</a></li>
                                     <li><a href="Card.html">诗人卡片</a></li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="#"><i class="icon-stack2"></i> <span>诗歌</span></a>
+                                <a href="#" class="active"><i class="icon-stack2"></i> <span>诗歌</span></a>
                                 <ul>
-                                    <li><a href="catalogpoem.html">诗歌目录</a></li>
+                                    <li ><a href="catalogpoem.html">诗歌目录</a></li>
                                     <li><a href="#">诗歌关系图谱</a></li>
                                     <li><a href="#">诗歌卡片</a></li>
                                 </ul>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="#"><i class="icon-stack2"></i> <span>查询</span></a>
                                 <ul>
                                     <li><a href="search.html">查询</a></li>
-                                    <li class="active"><a href="searchd.html">模板查询</a></li>
+                                    <li><a href="searchd.html">模板查询</a></li>
                                 </ul>
                             </li>
-                            <li ><a href="xiaofei.html"><i class="icon-list-unordered"></i> <span>诗歌小菲（写诗）</span></a></li>
+                            <li><a href="xiaofei.html"><i class="icon-list-unordered"></i> <span>诗歌小菲（写诗）</span></a></li>
                             <li><a href="AidedAnalysis.html"><i class="icon-list-unordered"></i> <span>辅助工具</span></a>
                                 <ul>
                                     <li><a href="ComAnalysis.html">诗人及诗歌论文分析</a></li>
@@ -243,75 +246,133 @@
             <!-- Content area -->
             <div class="content">
 
-
                 <div class="row">
-                    <div class="col-lg-5">
-
+                    <!--图谱部分-->
+                    <div class="col-md-12">
                         <div class="panel panel-flat">
-
-                            <div class="panel-heading panel-success" id="search_explaination">
-                                <div class="input-group">
-                                    <input id="search_content" type="search" class="form-control" placeholder="自然语言查询">
-                                    <span class="input-group-btn">
-											<button class="btn bg-success" type="button"
-                                                    onclick="search()"> 查询 </button>
-										</span>
-                                </div>
+                            <!--<div class="panel-heading">-->
+                            <!--<h6 class="panel-title"> </h6>-->
+                            <!--<div class="heading-elements">-->
+                            <!--<form class="heading-form" action="#">-->
+                            <!--<div class="form-group hidden">-->
+                            <!--<label class="checkbox-inline checkbox-switchery checkbox-right switchery-xs">-->
+                            <!--<input type="checkbox" id="catalog_showModulebox" class="switch" onclick="showModulebox()">-->
+                            <!--模板查询:-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--</form>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <div class="position-relative">
+                                <div class="position-relative" style="width:100%;height:600px;z-index:100;"
+                                     id="tupuall"></div>
+                                <!--<div class="position-relative" style="width:100%;height:560px;z-index:10;display: none;"-->
+                                     <!--id="tupuone"></div>-->
+                                <script type="text/javascript" src="assets/js/fonttypechange.js"></script>
+                                <script type="text/javascript" src="assets/js/tupupoet.js"></script>
+                                <script type="text/javascript" src="assets/js/tupu3.js"></script>
+                                <!--<script type="text/javascript" src="assets/js/tupu.js"></script>-->
                             </div>
-                            <div class="panel-heading panel-success">
-                                <h6 class="panel-title">识别sparql：</h6>
-                                <textarea type="textarea" style="width: 100%;margin-top: 20px;height: 300px;line-height: 20px;font-size: 16px;word-break: break-all;"></textarea>
-                            </div>
-                            <div class="panel-heading" id="searchinfo" style="width:100%;"></div>
-                            <a class="btn btn-success" style="width: 100%;display: none;" id="concreteinfoshow"
-                               onclick="showtupu()">显示详细图谱</a>
-                            <a class="btn btn-danger" style="width: 100%;display: none" id="concretepoetpageshow"
-                               onclick="showpoetpage()">显示诗人主页</a>
-                            <script type="text/javascript">
-                                function showExp() {
-                                    var element = document.getElementById("search_explaination");
-                                    if (document.getElementById("search_exp").checked) {
-                                        element.className = "panel-heading";
-                                    } else {
-                                        element.className = "panel-heading hidden";
-                                    }
-
-                                }
-                            </script>
-
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <!--图谱信息部分-->
+                    <!--<div class="col-md-3">-->
+                    <!--<div class="panel panel-flat" id="panel1" style="display: none;">-->
+                    <!--<div class="panel-heading panel-success">-->
+                    <!--<h6 class="panel-title">所选节点:</h6>-->
+                    <!--</div>-->
+                    <!--<div class="panel-body">-->
+                    <!--<h6 id="selectnode">&nbsp;</h6>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="panel panel-flat" id="panel2" style="display: none;">-->
+                    <!--<div class="panel-heading panel-success">-->
+                    <!--<h6 class="panel-title">详细信息:</h6>-->
+                    <!--</div>-->
+                    <!--<div class="panel-heading" id="info_description" style="width:100%;"></div>-->
+                    <!--<a class="btn btn-success" style="width: 100%;background-color: #292638; color: white;" id="reloadbutton"-->
+                    <!--onclick="reload()">显示详细图谱</a>-->
+                    <!--<a class="btn btn-default" style="width: 100%;background-color: #292638; color: white;" id="directinfo"-->
+                    <!--onclick="showpoetpage()">显示诗人主页</a>-->
+                    <!--<a class="btn btn-primary" style="width: 100%;display: none;" id="poembutton" onclick="showpoempage()">显示诗歌主页</a>-->
+                    <!--</div>-->
 
-                        <!-- Traffic sources -->
-                        <div class="panel panel-flat">
-                                <div class="position-relative">
-                                    <div class="content" id="ambiguity_shower">
-                                    </div><!--消除歧义展示区域-->
-                                </div>
+                    <!--<div class="panel panel-flat hidden" id="Moudule_search_panel">-->
+                    <!--<div class="panel-heading panel-success">-->
+                    <!--<h6 class="panel-title">模板查询:</h6>-->
+                    <!--</div>-->
 
-                                <div class="position-relative" style="width:100%;height:560px;"
-                                     id="search_shower"></div>
-                                        <!--查询结果展示区域-->
-                                <script type="text/javascript" src="assets/js/createRelation2.js"></script>
+                    <!--<div class="modulebox"-->
+                    <!--style="width:90%;text-align: left;display: inline-block;margin: 10px;border-radius: 5px;padding: 5px;">-->
+                    <!--<input type="text" class="form-control" placeholder="主体"-->
+                    <!--aria-describedby="basic-addon1"-->
+                    <!--style="width:40%;margin: 0;" id="module1">-->
 
-                            </div>
-                        </div>
-                        <!-- /traffic sources -->
+                    <!--<a class="btn btn-danger pull-right"-->
+                    <!--style="width: 30%;margin-top: 10px;margin-right: 20px;margin-bottom: 5px" id="submit3"-->
+                    <!--onclick="moduleSearch1();">查询</a>-->
+                    <!--</div>&lt;!&ndash;modulebox结束&ndash;&gt;-->
 
-                    </div>
+                    <!--<div class="modulebox"-->
+                    <!--style="text-align: left;display: inline-block;margin: 10px;border-radius: 5px;padding: 5px;">-->
+                    <!--<input type="text" class="form-control" placeholder="主体"-->
+                    <!--aria-describedby="basic-addon1"-->
+                    <!--style="width:40%;margin: 0;display:inline-block" id="module2">-->
 
+                    <!--<span>在</span>-->
+                    <!--<span>-->
+                    <!--<select class="form-control" style="width: 50%;margin:0;display: inline-block" id="select1">-->
+                    <!--<option>时间</option>-->
+                    <!--<option>地点</option>-->
+                    <!--</select>-->
+                    <!--</span>-->
+                    <!--<div class="form-group has-success" style="margin-bottom: 0px">-->
+                    <!--<input type="text" class="form-control "-->
+                    <!--aria-describedby="basic-addon1"-->
+                    <!--style="width:30%;margin: 10px 0px 0px 0px;display:inline-block" id="module3">-->
+                    <!--<select class="form-control" style="width: 50%;margin:0;display: inline-block;" id="select2">-->
+                    <!--<option>的经历？</option>-->
+                    <!--<option>认识的人？</option>-->
+                    <!--<option>的作品？</option>-->
+                    <!--</select>-->
+                    <!--</div>-->
 
+                    <!--<a class="btn btn-danger pull-right"-->
+                    <!--style="width: 30%;margin-top: 10px;margin-right: 20px;margin-bottom: 5px" id="submit"-->
+                    <!--onclick="moduleSearch2()">查询</a>-->
+                    <!--</div>&lt;!&ndash;modulebox结束&ndash;&gt;-->
 
+                    <!--<div class="modulebox"-->
+                    <!--style="text-align: left;display: inline-block;margin: 10px;border-radius: 5px;padding: 5px;">-->
+                    <!--<input type="text" class="form-control" placeholder="主体A"-->
+                    <!--aria-describedby="basic-addon1"-->
+                    <!--style="width:45%;margin: 0;display:inline-block">-->
 
-                    <!-- Footer -->
-                    <div class="footer text-muted">
-                        &copy; 2017. <a href="http://www.felixy.xyz" target="_blank">Felixy</a>前端实验室
-                    </div>
-                    <!-- /footer -->
+                    <!--<span>与</span>-->
+                    <!--<input type="text" class="form-control" placeholder="主体B"-->
+                    <!--aria-describedby="basic-addon1"-->
+                    <!--style="width:45%;margin: 0;display:inline-block">-->
+
+                    <!--<div class="form-group has-success" style="margin-bottom: 0px;margin-top: 10px;">-->
+                    <!--<select class="form-control" style="width: 50%;margin:0;display: inline-block;">-->
+                    <!--<option>的关系？</option>-->
+                    <!--</select>-->
+                    <!--</div>-->
+
+                    <!--<a class="btn btn-danger pull-right"-->
+                    <!--style="width: 30%;margin-top: 10px;margin-right: 20px;margin-bottom: 5px" id="submit2"-->
+                    <!--onclick="">查询</a>-->
+                    <!--</div>&lt;!&ndash;modulebox结束&ndash;&gt;-->
+
+                    <!--<a class="btn  btn-block btn-lg btn-info" id="addModule" style="width: 100%" onclick="">添加模板</a>-->
+
+                    <!--<script type="text/javascript" src="assets/js/modulesearch.js"></script>-->
+
+                    <!--</div>-->
+                    <!--</div>-->
 
                 </div>
-                <!-- /content area -->
+
                 <!-- 登陆注册页面 -->
                 <div id="modal_form_inline" class="modal fade">
                     <div class="modal-dialog">
@@ -324,8 +385,7 @@
                                 <div class="modal-body">
                                     <div class="form-group has-feedback">
                                         <label>用户名: </label>
-                                        <input type="text" placeholder="Your username" class="form-control"
-                                               id="user_name">
+                                        <input type="text" placeholder="Your username" class="form-control" id="user_name">
                                         <div class="form-control-feedback">
                                             <i class="icon-user text-muted"></i>
                                         </div>
@@ -333,8 +393,7 @@
 
                                     <div class="form-group has-feedback">
                                         <label>密码: </label>
-                                        <input type="password" placeholder="Your password" class="form-control"
-                                               id="password">
+                                        <input type="password" placeholder="Your password" class="form-control" id="password">
                                         <div class="form-control-feedback">
                                             <i class="icon-lock text-muted"></i>
                                         </div>
@@ -342,7 +401,7 @@
                                 </div>
 
                                 <div class="modal-footer text-center">
-                                    <button type="submit" class="btn btn-primary" id="login"> 登 陆</button>
+                                    <button type="submit" class="btn btn-primary" id="login"> 登 陆 </button>
                                 </div>
                             </form>
                         </div>
@@ -360,8 +419,7 @@
                                     <div class="row">
                                         <div class="form-group has-feedback">
                                             <label>用户名: </label>
-                                            <input type="text" placeholder="Your username" class="form-control"
-                                                   id="r_user_name">
+                                            <input type="text" placeholder="Your username" class="form-control" id="r_user_name">
                                             <div class="form-control-feedback">
                                                 <i class="icon-user text-muted"></i>
                                             </div>
@@ -369,9 +427,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group has-feedback">
-                                            <label>密 &#12288;码: </label>
-                                            <input type="password" placeholder="Your password" class="form-control"
-                                                   id="r_password">
+                                            <label>密  &#12288;码: </label>
+                                            <input type="password" placeholder="Your password" class="form-control" id="r_password">
                                             <div class="form-control-feedback">
                                                 <i class="icon-lock text-muted"></i>
                                             </div>
@@ -379,9 +436,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group has-feedback">
-                                            <label>重 &#12288;复: </label>
-                                            <input type="password" placeholder="Repeat password" class="form-control"
-                                                   id="r_repeat">
+                                            <label>重  &#12288;复: </label>
+                                            <input type="password" placeholder="Repeat password" class="form-control" id="r_repeat">
                                             <div class="form-control-feedback">
                                                 <i class="icon-lock text-muted"></i>
                                             </div>
@@ -391,7 +447,7 @@
                                 </div>
 
                                 <div class="modal-footer text-center">
-                                    <button type="submit" class="btn btn-primary" id="create"> 注 册</button>
+                                    <button type="submit" class="btn btn-primary" id="create"> 注 册 </button>
                                 </div>
                                 <script type="text/javascript" src="assets/js/login.js"></script>
                             </form>
@@ -401,16 +457,27 @@
                 <!-- /登陆注册页面 -->
 
             </div>
-            <!-- /main content -->
+            <!-- Footer -->
+            <div class="footer text-muted">
+                &copy; 2017. <a href="http://www.felixy.xyz" target="_blank">Felixy</a>前端实验室
+            </div>
+            <!-- /footer -->
 
         </div>
-        <!-- /page content -->
+        <!-- /content area -->
 
     </div>
-    <!-- /page container -->
-    <script type="text/javascript" src="assets/js/fonttypechange.js"></script>
+    <!-- /main content -->
 
 </div>
+<!-- /page content -->
+
+</div>
+<!-- /page container -->
+<script type="text/javascript" src="assets/js/catlogjs.js"></script>
+
+<script type="text/javascript" src="assets/js/effect.js"></script>
+<script type="text/javascript" src="assets/js/searchadapter.js"></script>
 </body>
 
 </html>
