@@ -103,13 +103,15 @@ $.getJSON('http://www.freekg.cn/poet/datasource/allpoet', function (json) {//这
                     },
                     lineStyle: {
                         normal: {
-                            color: '#4a4564',
+                            // color: '#4a4564',
+                            color: '#ABC327',
                             curveness: 0.5
                         }
                     },
                     itemStyle:{
                         normal:{
-                            color:'#292638'
+                            // color:'#292638'
+                            color:'#6C890B'
                         }
                     },
                     force: {

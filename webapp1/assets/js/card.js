@@ -6,8 +6,8 @@
     // console.log("js文件加载");
 var pareparam = $("bady");
 $(function () {
-        $.getJSON('datasource/poetcardlist?max='+60,function (data) {
-            console.log("card列表")
+        $.getJSON('http://www.freekg.cn/poet/datasource/poetcardlist?max='+20,function (data) {
+            console.log("card列表");
             console.log(data);
             for(i=0;i<data.length;i++) {
                 var div = '';

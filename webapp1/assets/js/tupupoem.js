@@ -39,7 +39,7 @@ var data={
             }
         }
 );
-// $.ajaxSettings.async = true;
+
 $(document).ajaxStop(function () {
     option = {
         tooltip: {
