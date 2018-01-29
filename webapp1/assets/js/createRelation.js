@@ -264,16 +264,18 @@ function answerpoemrequest(info) {//相应古诗查询结果，从下面显示�
         ob:info.authoruri,
         poemname:info.name,
         content:info.content
-    }
+    };
 
-    poemname=document.createElement("h2");
-    poemauthor=document.createElement("h2");
-    poemcontent=document.createElement("h2");
+    poemname=document.createElement("h4");
+    poemauthor=document.createElement("p");
+    var hr=document.createElement("hr");
+    poemcontent=document.createElement("h5");
     poemname.innerText=json.poemname;
     poemauthor.innerText=json.name;
     poemcontent.innerText=json.content;
     poemshower.appendChild(poemname);
     poemshower.appendChild(poemauthor);
+    poemshower.appendChild(hr);
     poemshower.appendChild(poemcontent);
 
     // findworklink(json);
@@ -347,6 +349,7 @@ function createambiguity(info) {//根据传入对象的不同，返回不同的d
         ale.setAttribute("class", "btn btn-default");
         var innertext = document.createTextNode(convert(0, info.name) + "(" + convert(0, info.alter_name) + ")");
         ale.appendChild(innertext);
+        // ale.setAttribute("onclick","choose("+count+")");
         ale.setAttribute("onclick","choose("+count+")");
         ale.setAttribute("style","max-width:50%;margin: 3px;overflow:hidden;text-overflow:ellipsis;word-break:break-all;");
         count++;
@@ -476,7 +479,7 @@ function finexpinfo(json) {
         if(exp[0].description){
         for (var m=0;m<JSONLength(exp);m++) {
             $.ajaxSettings.async = false;
-            $.getJSON("datasource/expdes?expuri=" + exp[m].exp, function (expdes) {
+            $.getJSON("http://www.freekg.cn/poet/datasource/expdes?expuri=" + exp[m].exp, function (expdes) {
                 var eme = document.getElementById('searchinfo');
                 var a1 = createbutton("经历", expdes[0].description);
                 var a2 = createbutton("地点", expdes[0].place);
@@ -544,12 +547,21 @@ function createredbutton(info,desinfo) {
     }
 
 }
+// function choose(num) {
+//     $("#search_shower").show();
+//     if (pausejsonlist[num].born) {
+//         answerpoetrequest(pausejsonlist[num]);
+//     } else {
+//         answerpoemrequest(pausejsonlist[num]);
+//     }
+// }
 function choose(num) {
-    $("#search_shower").show();
+
     if (pausejsonlist[num].born) {
         answerpoetrequest(pausejsonlist[num]);
     } else {
         answerpoemrequest(pausejsonlist[num]);
+        window.location.assign("poeminfo.html?poemname=" + pausejsonlist[num].name);
     }
 }
 function clicktodo(param) {
