@@ -300,12 +300,9 @@ function clickonce(param) {
                 $("#directinfo").show();
             }
             eConsole(pareparam);//显示对应节点的信息
-
         }
-
     }
 }
-
 function showworkinfo(name, value) {//展示作品信息
     deleteall();
     var eme=document.getElementById('info_description');
