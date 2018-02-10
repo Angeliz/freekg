@@ -18,7 +18,7 @@
     <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
-    <script type="text/javascript" src="assets/js/echarts.js"></script>
+    <script type="text/javascript" src="assets/js/echarts.min.js"></script>
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
@@ -33,12 +33,12 @@
 
     <script type="text/javascript" src="assets/js/fonttypechange.js"></script>
     <!--<script type="text/javascript" src="assets/js/poetinfo2.js"></script>-->
-    <script type="text/javascript" src="assets/js/poetplace.js"></script>
+    <script type="text/javascript" src="assets/js/poetplace3.js"></script>
     <script src="http://echarts.baidu.com/asset/map/js/china.js"></script>
 
 </head>
 <body>
-<!--上方导航栏-->
+
 <!-- Main navbar -->
 <div class="navbar navbar-default header-highlight">
     <div class="navbar-header">
@@ -152,7 +152,7 @@
 
     <!-- Page content -->
     <div class="page-content">
-        <!--左方导航栏-->
+
         <!-- Main sidebar -->
         <div class="sidebar sidebar-main">
             <div class="sidebar-content">
@@ -166,18 +166,19 @@
                             <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i>
                             </li>
                             <li><a href="reindex1.html"><i class="icon-home4"></i> <span>介绍</span></a></li>
-                            <li >
+                            <li class="active">
                                 <a href="#"><i class="icon-stack2"></i> <span>诗人</span></a>
                                 <ul>
-                                    <li ><a href="catalogpoet.html">诗人目录</a></li>
-                                    <li><a href="catalogc.html">诗人关系图谱</a></li>
+                                    <li ><a href="catalogpoem.html">诗人目录</a></li>
+                                    <li ><a href="catalogc.html">诗人关系图谱</a></li>
+                                    <li class="active"><a href="poetplace.html">诗人轨迹</a></li>
                                     <li><a href="Card.html">诗人卡片</a></li>
                                 </ul>
                             </li>
                             <li >
                                 <a href="#"><i class="icon-stack2"></i> <span>诗歌</span></a>
                                 <ul>
-                                    <li><a href="catalogpoem.html">诗歌目录</a></li>
+                                    <!--<li><a href="catalogpoem.html">诗歌目录</a></li>-->
                                     <!--<li><a href="#">诗歌关系图谱</a></li>-->
                                     <li ><a href="cardpoem.html">诗歌卡片</a></li>
                                 </ul>
@@ -245,11 +246,8 @@
                 </div>
                 <div class="breadcrumb-line">
                     <ul class="breadcrumb position-right" id="poetinfo_breadcrumb">
-                        <li class="active"><a href="poetinfo.html" class="poetinfo"><i class="icon-display4 position-left"></i> 静态信息</a></li>
-                        <li><a href="poetplace.html" class="poetplace"><i class="icon-display4 position-left"></i> 诗人轨迹</a></li>
-                        <li><a href="search_users.html"><i class="icon-people position-left"></i> 关系图谱</a></li>
-                        <li><a href="search_images.html"><i class="icon-image2 position-left"></i> 作品图谱</a></li>
-                        <li><a href="#"><i class="icon-file-play position-left"></i> 综合图谱</a></li>
+                        <li><a href="catalog.html"><i class="icon-home2 position-left"></i> 图谱概览</a></li>
+                        <li><a href="poetplace.html">诗人轨迹</a></li>
                     </ul>
                 </div>
             </div>
@@ -261,7 +259,8 @@
 
                 <div class ="row">
                     <div class="panel panel-body">
-                    <div class="col-md-8"><div class="panel panel-body" id="poetplace" style="width:100%;height:500px;"></div></div>
+                    <div class="col-md-8"><div class="panel panel-body" id="poetplace" style="width:100%;height:600px;"></div>
+                    <div class="panel panel-body" id="xpoetplace" style="width:100%;height:600px;"></div></div>
                         <div class="col-md-4">
                             <div class="panel-body panel">
                                 <h6 class="panel-title"><label>&nbsp;&nbsp;查找诗人：</label></h6>
