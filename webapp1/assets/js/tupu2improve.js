@@ -10,7 +10,7 @@ var desinfo = [];
 var links =[];
 links.pop();
 var namelist = [];
-<!--获取图谱生成数据-->
+// 获取图谱生成数据
 $.getJSON('http://www.freekg.cn/poet/datasource/allpoet', function (json) {//这里获取诗人列表
         var num = JSONLength(json);
         for (var m = 0; m < num; m++) {

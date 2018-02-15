@@ -67,27 +67,6 @@ $.getJSON('http://www.freekg.cn/poet/datasource/allpoet', function (json) {//这
             trigger: 'item',
             triggerOn: 'mousemove'
         },
-        // series: [
-        //     {
-        //         type: 'tree',
-        //
-        //         data: [data],
-        //
-        //         top: '18%',
-        //         bottom: '14%',
-        //
-        //         layout: 'radial',
-        //
-        //         symbol: 'emptyCircle',
-        //
-        //         // symbolSize: 7,
-        //
-        //         initialTreeDepth: 2
-        //
-        //         // animationDurationUpdate: 750
-        //
-        //     }
-        // ]
         series:[
             {
                 type: 'tree',
